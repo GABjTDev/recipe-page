@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+
+:root {
+  --font1: "Montserrat";
+  --font2: "Playfair Display";
+
+  --gray: #c4c4c4;
+  --gray1: #333333;
+  --gray2: #4f4f4f;
+  --gray3: #828282;
+  --gray4: #bdbdbd;
+
+  --orange: #f2994a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 30px 12px;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+p {
+  font-family: var(--font1);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.material-icons {
+  margin-right: 5px;
+}
+
+h1 {
+  margin-bottom: 12px;
+}
+
+.head p {
+  max-width: 320px;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.head p::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  background: var(--gray);
+  box-shadow: 5px 0 0 var(--gray), 10px 0 0 var(--gray), 0 5px 0 var(--gray),
+    5px 5px 0 var(--gray), 10px 5px 0 var(--gray);
+}
+
+.head {
+  margin-bottom: 24px;
+}
+
+.contain .time {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contain .time .time-item:first-child {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contain .time .time-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.contain .time .time-item .time-title {
+  color: var(--gray4);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 8px;
+  line-height: 10px;
+  text-transform: uppercase;
+}
+
+.contain .time .time-item .orange {
+  color: var(--orange);
+}
+
+.contain .time .time-item .time-text .orange {
+  color: var(--orange);
+}
+
+.contain .time .time-item .time-time {
+  font-style: normal;
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--gray1);
+}
+
+.materials .ingredients h2 {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--gray1);
+  margin-bottom: 13px;
+}
+
+.materials .ingredients .ingredients-item {
+  margin-bottom: 42px;
+}
+
+.materials .ingredients .ingredients-item h3 {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--gray1);
+  margin-bottom: 23px;
+}
+
+.materials .ingredients .ingredients-item ul li {
+  margin-bottom: 14px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.materials .ingredients .ingredients-item ul li span {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.materials .ingredients .ingredients-item ul li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid var(--gray3);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.instructions .instructions-item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.instructions .instructions-item .box {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  margin-right: 15px;
+  background-color: var(--orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instructions .instructions-item .box > p {
+  width: auto;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: white;
+}
+
+.instructions .instructions-item p {
+  width: 100%;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+.instructions .instructions-item p span {
+  width: 100%;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: var(--gray1);
+}
+
+.instructions .link,
+.instructions .link a {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--gray4);
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+footer p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+}
+
+footer p a {
+  color: #828282;
+}
+
+@media screen and (min-width: 1024px) {
+  .head h1 {
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  .head p {
+    max-width: 600px;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 28px;
+  }
+
+  .contain {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+  }
+
+  .contain .time {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 50px;
+    padding-left: 120px;
+    order: 1;
+  }
+
+  .contain .time .time-item:first-child {
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .contain .time .time-item .time-title {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .contain .time .time-item .time-time {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .materials {
+    padding-right: 150px;
+  }
+
+  .materials .ingredients h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .materials .ingredients .ingredients-item ul li {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .instructions .link,
+  .instructions .link a {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--gray4);
+  }
+}
